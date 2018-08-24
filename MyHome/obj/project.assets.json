@@ -12549,11 +12549,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\USR\\Projects\\MyHome\\MyHome.csproj",
+      "projectUniqueName": "E:\\USR\\Projects\\GitHub\\MyHome\\MyHome\\MyHome.csproj",
       "projectName": "MyHome",
-      "projectPath": "e:\\USR\\Projects\\MyHome\\MyHome.csproj",
+      "projectPath": "E:\\USR\\Projects\\GitHub\\MyHome\\MyHome\\MyHome.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "e:\\USR\\Projects\\MyHome\\obj\\",
+      "outputPath": "E:\\USR\\Projects\\GitHub\\MyHome\\MyHome\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

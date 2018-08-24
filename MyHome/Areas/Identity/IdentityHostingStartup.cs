@@ -16,7 +16,7 @@ namespace MyHome.Areas.Identity
         {
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<MyHomeIdentityDbContext>(options =>
-                    options.UseSqlServer(
+                    options.UseSqlite(
                         context.Configuration.GetConnectionString("MyHomeIdentityDbContextConnection")));
 
                 services.AddDefaultIdentity<IdentityUser>()
