@@ -38,6 +38,9 @@ namespace MyHome
             }
 
             host.Run();
+
+            // Publish:
+            // dotnet publish -c release -f netcoreapp2.1
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
