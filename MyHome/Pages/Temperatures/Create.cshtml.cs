@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MyHome.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyHome.Pages.Temperatures
 {
     // Reference: https://docs.microsoft.com/zh-cn/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=netcore-cli
 
+    [Authorize]
     public class CreateModel : PageModel
     {
         private readonly MyHome.Models.HomeContext _context;
@@ -30,16 +32,6 @@ namespace MyHome.Pages.Temperatures
 
         public async Task<IActionResult> OnPostAsync()
         {
-            // Validate
-            if (!Temperature.Memo.Contains("Keeper"))
-            {
-                return Page();
-            }
-            else
-            {
-                Temperature.Memo = Temperature.Memo.Replace("Keeper", "");
-            }
-
             if (!ModelState.IsValid)
             {
                 return Page();

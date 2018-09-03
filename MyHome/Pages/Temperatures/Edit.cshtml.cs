@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MyHome.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyHome.Pages.Temperatures
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         private readonly MyHome.Models.HomeContext _context;
@@ -40,15 +42,6 @@ namespace MyHome.Pages.Temperatures
 
         public async Task<IActionResult> OnPostAsync()
         {
-            // Validate
-            if (!Temperature.Memo.Contains("Keeper"))
-            {
-                return Page();
-            }
-            else
-            {
-                Temperature.Memo = Temperature.Memo.Replace("Keeper", "");
-            }
 
             if (!ModelState.IsValid)
             {

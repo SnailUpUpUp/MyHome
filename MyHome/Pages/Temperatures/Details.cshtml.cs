@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using MyHome.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyHome.Pages.Temperatures
 {
+    [Authorize]
     public class DetailsModel : PageModel
     {
         private readonly MyHome.Models.HomeContext _context;

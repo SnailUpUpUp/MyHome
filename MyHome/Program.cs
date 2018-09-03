@@ -41,6 +41,7 @@ namespace MyHome
 
             // Publish:
             // dotnet publish -c release -f netcoreapp2.1
+            // dotnet publish -c release -f netcoreapp2.1 -o E:\USR\Projects\GitHub\MyHome\MyHome_publish  --force
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
