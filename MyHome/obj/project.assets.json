@@ -12549,22 +12549,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\USR\\Projects\\GitHub\\MyHome\\myhome\\MyHome.csproj",
+      "projectUniqueName": "E:\\USR\\Projects\\GitHub\\MyHome\\MyHome\\MyHome.csproj",
       "projectName": "MyHome",
-      "projectPath": "E:\\USR\\Projects\\GitHub\\MyHome\\myhome\\MyHome.csproj",
+      "projectPath": "E:\\USR\\Projects\\GitHub\\MyHome\\MyHome\\MyHome.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\USR\\Projects\\GitHub\\MyHome\\myhome\\obj\\",
+      "outputPath": "E:\\USR\\Projects\\GitHub\\MyHome\\MyHome\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

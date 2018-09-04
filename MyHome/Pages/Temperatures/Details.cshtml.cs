@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace MyHome.Pages.Temperatures
 {
-    [Authorize]
     public class DetailsModel : PageModel
     {
         private readonly MyHome.Models.HomeContext _context;
